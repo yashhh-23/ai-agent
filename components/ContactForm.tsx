@@ -41,12 +41,12 @@ export default function ContactForm(): JSX.Element {
   }
 
   function validateAll(): FormErrors {
-    const nextErrors: FormErrors = {}
+    const nextErrors: FormErrors = {};
     (Object.keys(values) as (keyof FormValues)[]).forEach((k) => {
-      const err = validateField(k, values[k])
-      if (err) nextErrors[k] = err
-    })
-    return nextErrors
+      const err = validateField(k, values[k]);
+      if (err) nextErrors[k] = err;
+    });
+    return nextErrors;
   }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
