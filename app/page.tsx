@@ -9,16 +9,12 @@ import Footer from '@/components/Footer'
 
 export default function Page(): JSX.Element {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body>
-        <main className="min-h-screen font-sans antialiased text-neutral-900">
-          <Navbar />
-          <Hero />
-          <Features />
-          <ContactForm />
-          <Footer />
-        </main>
-      </body>
-    </html>
+    <main className="min-h-screen font-sans antialiased text-neutral-900">
+      <Navbar />
+      <Hero />
+      <Features />
+      <ContactForm />
+      <Footer />
+    </main>
   )
 }
